@@ -21,6 +21,13 @@ public class TestServlet extends HttpServlet {
     }
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        log.info("Process GET request");
+        resp.getWriter().println("I give you nothing, ha-ha");
+
+    }
+
+    @Override
     public void init(ServletConfig config) throws ServletException {
         log.info("I have been initialized!");
         super.init(config);
