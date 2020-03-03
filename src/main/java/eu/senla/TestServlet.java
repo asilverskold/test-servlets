@@ -26,4 +26,13 @@ public class TestServlet extends HttpServlet {
         super.init(config);
     }
 
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String method = req.getMethod();
+        if(method.equals("VALIDATE")) {
+            resp.getWriter().println("Processing custom VALIDATE method");
+        } else {
+            super.service(req, resp);
+        }
+    }
 }
