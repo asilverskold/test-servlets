@@ -7,16 +7,6 @@
     <display-name>ServletFilterTutorial</display-name>
 
 
-    <servlet>
-        <servlet-name>test-servlet</servlet-name>
-        <servlet-class>eu.senla.TestServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>test-servlet</servlet-name>
-        <url-pattern>/test</url-pattern>
-    </servlet-mapping>
 
     <filter>
         <filter-name>SecondFilter</filter-name>
