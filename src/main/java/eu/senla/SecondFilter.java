@@ -6,11 +6,9 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-@WebFilter(urlPatterns = "/test")
 public class SecondFilter implements Filter {
 
     private static final Logger log = Logger.getLogger(SecondFilter.class.getName());
